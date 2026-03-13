@@ -15,10 +15,10 @@ check_key() {
   total=$((total + 1))
   if [[ -n "${!var:-}" ]]; then
     ok=$((ok + 1))
-    $verbose && echo "[OK] ${name}: ${service}"
+    if $verbose; then echo "[OK] ${name}: ${service}"; fi
   else
     missing+=("${var}")
-    $verbose && echo "[MISSING] ${name}: Set ${var} to enable ${service}"
+    if $verbose; then echo "[MISSING] ${name}: Set ${var} to enable ${service}"; fi
   fi
 }
 
