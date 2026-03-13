@@ -17,14 +17,20 @@ Claude Code plugin for web search, fetch, and crawl operations via Jina AI, Clou
 
 ## Installation
 
+### From Marketplace (Recommended)
+
 ```bash
-claude plugin add /path/to/claude-crawl
+# Add the hex-plugins marketplace
+/plugin marketplace add hex/claude-marketplace
+
+# Install claude-crawl
+/plugin install claude-crawl
 ```
 
-Or test locally:
+### Direct from GitHub
 
 ```bash
-claude --plugin-dir /path/to/claude-crawl
+/plugin install hex/claude-crawl
 ```
 
 ## Configuration
