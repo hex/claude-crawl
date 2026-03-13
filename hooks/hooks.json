@@ -1,0 +1,28 @@
+{
+  "description": "claude-crawl: auth validation and WebFetch interception",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/check-auth.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/scripts/webfetch-intercept.sh",
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

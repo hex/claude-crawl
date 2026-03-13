@@ -1,0 +1,24 @@
+# Plugin output directory
+.claude-crawl/
+
+# Per-project settings
+.claude/*.local.md
+
+# Transient files
+*.lock
+*.tmp
+*.bak
+
+# Session metadata
+.cs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
