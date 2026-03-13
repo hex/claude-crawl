@@ -1,6 +1,6 @@
 {
   "name": "claude-crawl",
-  "version": "2026.3.1",
+  "version": "2026.3.2",
   "description": "Web search, fetch, and crawl via Jina AI, Cloudflare Browser Rendering, and Firecrawl",
   "author": {
     "name": "hex"
